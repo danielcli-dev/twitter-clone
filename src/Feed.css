@@ -1,0 +1,105 @@
+.feed {
+  flex: 0.4;
+  border-right: 1px solid var(--twitter-background);
+  /* min-width: fit-content; */
+  width: fit-content;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.feed::-webkit-scrollbar {
+  display: none;
+}
+
+.feed {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.feed__header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  border: 1px solid var(--twitter-background);
+  padding: 15px 20px;
+  justify-content: space-between;
+}
+
+.feed__header > h2 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.feed__input {
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  height: fit-content;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* height: 80px; */
+  border-top: 1px solid var(--twitter-background);
+  border-bottom: 1px solid var(--twitter-background);
+  background-color: blue;
+}
+
+.feed__input > form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: fit-content;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: green;
+}
+
+.feed__input > form > input {
+  flex: 1;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  padding: 10px;
+  background-color: var(--twitter-background);
+}
+
+.feed__input > form > input:not(:last-child) {
+  margin-bottom: 10px;
+}
+.feed__input > form > button {
+  display: none;
+}
+
+.feed__wall {
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: yellow;
+}
+
+.feed__message {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  border-bottom: 1px solid green;
+  background-color: pink;
+  padding: 50px;
+  width: 100%;
+  word-break: break-word;
+  font-size: 20px;
+  /* position: relative; */
+}
+
+.feed__message > h4 {
+  /* position: absolute; */
+  margin-top: 20px;
+  font-size: 15px;
+}

@@ -1,0 +1,56 @@
+.sidebar > a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.sidebar {
+  flex: 0.3;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  border-right: 1px solid var(--twitter-background);
+}
+
+.sidebar__twitterIcon {
+  color: var(--twitter-color);
+  font-size: 30px !important;
+  margin: 0 20px;
+}
+
+.sidebar__tweet {
+  background-color: var(--twitter-color) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important;
+  height: 50px !important;
+  margin-top: 20px !important;
+}
+
+.sidebar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar__header > h2 {
+  font-size: 14px;
+}
+
+
+.sidebar__headerLogout {
+  padding: 10px 15px;
+  border-radius: 50px;
+  background-color: var(--twitter-color);
+  border: none;
+  outline: none;
+  color: white;
+  transition: opacity 300ms ease-in-out;
+  width: 80px;
+}
+
+.sidebar__headerLogout:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
